@@ -33,13 +33,12 @@ def compareBalckList(BLDate, comparedField, source="icst"):
 	return results
 	
 
-blacklist = getBlackList(filePath="/Users/senacml/Downloads/susip_0801.octet-stream")
+blacklist = getBlackList(filePath="path/to/file")
 print blacklist
-#insertBlackList(BLDate="0101", source="icst", blContent=blacklist)
-#a = compareBalckList(BLDate="0101", source="icst", comparedField="AdrIpSrc")
-#for each in a :
-#	print each
-
+insertBlackList(BLDate="0101", source="icst", blContent=blacklist)
+a = compareBalckList(BLDate="0101", source="icst", comparedField="AdrIpSrc")
+for each in a :
+	print each
 
 
 
